@@ -32,7 +32,7 @@ Sample Record :
 ## Database Schema Design
 
 ### Data Model ERD
-
+![database](./images/database.png)
 
 
 ## Project structure
