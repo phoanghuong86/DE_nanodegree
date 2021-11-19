@@ -67,3 +67,63 @@ Follow the steps to extract and load the data into the data model.
 3. Run ETL process and load data into database by  running `elt.py`
 
 4. Test the data has been loaded into database by executing queries in `test.ipynb`
+    
+### Songlay Analysis:
+
+Q1: Top most artist name:
+
+select a.name as artist_name, count(*) from songplays s join artists a on s.artist_id=a.artist_id  group by a.name order by count(*) desc limit 1;
+
+```
+ artist_name | count 
+-------------+-------
+ Elena       |     1
+```
+
+Q2: Sex ratio on app:
+
+select u.gender,count(s.*) from songplays s join users u on s.user_id=u.user_id group by u.gender; 
+
+```
+ gender | count 
+--------+-------
+ M      | 25928
+ F      | 71980
+```
+
+Q3: How many paid users in app:
+
+select count(*) from songplays where level='paid'  group by level; 
+```
+paid_users_cnt 
+-------
+  5933
+```
+
+Q4: location of app users:
+
+select location,count(*) from songplays where level='paid'  group by location; 
+```
+                location                 | count 
+-----------------------------------------+-------
+ San Jose-Sunnyvale-Santa Clara, CA      |   196
+ Chicago-Naperville-Elgin, IL-IN-WI      |   462
+ Sacramento--Roseville--Arden-Arcade, CA |   253
+ Birmingham-Hoover, AL                   |   267
+ Longview, TX                            |    17
+ Janesville-Beloit, WI                   |   288
+ Atlanta-Sandy Springs-Roswell, GA       |   428
+ Waterloo-Cedar Falls, IA                |   433
+ Lake Havasu City-Kingman, AZ            |   336
+ San Antonio-New Braunfels, TX           |    33
+ Winston-Salem, NC                       |   213
+ Lansing-East Lansing, MI                |   557
+ Tampa-St. Petersburg-Clearwater, FL     |   307
+ Marinette, WI-MI                        |   169
+ New York-Newark-Jersey City, NY-NJ-PA   |   149
+ Augusta-Richmond County, GA-SC          |   140
+ Portland-South Portland, ME             |   648
+ Detroit-Warren-Dearborn, MI             |    72
+ Red Bluff, CA                           |   205
+ San Francisco-Oakland-Hayward, CA       |   760
+```
