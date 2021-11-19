@@ -32,7 +32,7 @@ Sample Record :
 ## Database Schema Design
 
 ### Data Model ERD
-
+![database](./images/database.png)
 
 
 ## Project structure
@@ -42,11 +42,9 @@ Files in this repository:
 |  File / Folder   |                         Description                          |
 | :--------------: | :----------------------------------------------------------: |
 |       data       | Folder at the root of the project, where all song and log data JSONS reside |
-|      images      |  Folder at the root of the project, where images are stored  |
 |  sql_queries.py  |      Contains the SQL queries for data modeling and ETL      |
 | create_tables.py |         Drops and creates tables. (Reset the tables)         |
-|    test.ipynb    |                Exploring the database tables                 |
-|    etl.ipynb     | Processes a file from song_data and log_data and loads the data into tables |
+|    test.ipynb    |                Test and Exploring the database tables                 |
 |      etl.py      | Processes all files from song_data and log_data and loads them into  tables |
 |      README      |                         Readme file                          |
 
