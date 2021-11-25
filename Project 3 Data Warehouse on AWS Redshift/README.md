@@ -63,4 +63,4 @@ Files in this repository:
 
 5. Run ETL process and load data 
 6. Validate the data
-7. Finish byestroy the clusters on AWS by
+7. Finish by destroy the clusters on AWS by
