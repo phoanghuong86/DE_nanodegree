@@ -21,7 +21,7 @@ def analyze_query(cur, conn):
                 conn.commit()
                 
         except psycopg2.Error as e:
-            print(e)
+           # print(e)
             conn.close()
 
 
