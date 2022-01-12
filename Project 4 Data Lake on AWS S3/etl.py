@@ -155,7 +155,7 @@ def process_log_data(spark, input_data, output_data):
     print("Writing Songplays table to S3 after processing")  
     songplays_table.write.parquet(os.path.join(output_data, "songplays/"), \
                                   mode="overwrite", partitionBy=["year","month"])
-    print("Completed")
+    print("Completed the job")
 
 
 def main():
