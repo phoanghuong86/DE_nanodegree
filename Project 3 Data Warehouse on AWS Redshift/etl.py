@@ -34,6 +34,7 @@ def insert_tables(cur, conn):
 def main():
     """
     Extract song metadata and user activity data from S3, transform it using a staging table, and load it into fact and dimensional tables for analysis
+    
     """
     
     config = configparser.ConfigParser()
