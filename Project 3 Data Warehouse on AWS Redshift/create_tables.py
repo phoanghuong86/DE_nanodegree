@@ -6,7 +6,7 @@ from sql_queries import create_table_queries, drop_table_queries
 
 def drop_tables(cur, conn):
     """
-    Drop all the table in the Redshift cluster
+    Drop all the table in the Redshift cluster - do it first
     :param cur: cursor object to database connection
     :param conn: connection object to database
     """
