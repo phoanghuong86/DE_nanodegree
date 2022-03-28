@@ -1,7 +1,9 @@
+# import libs
 import psycopg2
 from sql_queries import create_table_queries, drop_table_queries
 
 
+# python cript to create table and add data by using defined script SQL
 def create_database():
     """
     - Creates and connects to the sparkifydb
