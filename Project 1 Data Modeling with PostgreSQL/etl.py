@@ -1,10 +1,12 @@
+# import libs
 import os
 import glob
 import psycopg2
 import pandas as pd
 from sql_queries import *
 
-
+# functions to process song file, log file and data
+# function to process song file
 def process_song_file(cur, filepath):
     """
     Process the song file to insert data into the specific data model for analysis
@@ -37,7 +39,7 @@ def process_song_file(cur, filepath):
     except psycopg2.Error as error:
         print(error)
         
-
+# function process log file
 def process_log_file(cur, filepath):
     """
     Process the log file to insert data into the specific data model for analysis
@@ -93,7 +95,7 @@ def process_log_file(cur, filepath):
         songplay_data = (pd.to_datetime(row.ts, unit='ms'), row.userId, row.level, songid, artistid, row.sessionId, row.location, row.userAgent)
         cur.execute(songplay_table_insert, songplay_data)
 
-
+# function to process data
 def process_data(cur, conn, filepath, func):
     """
     Read all the files in `filepath` and call the `func` function
@@ -120,7 +122,7 @@ def process_data(cur, conn, filepath, func):
         conn.commit()
         print('{}/{} files processed.'.format(i, num_files))
 
-
+# main function
 def main():
     """
     main function
