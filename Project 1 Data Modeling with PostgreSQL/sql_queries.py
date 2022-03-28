@@ -1,3 +1,5 @@
+# This is SQL code to run for project 1, including: drop exist tables, create tables, and insert query to insert datat to PostgreSQL
+
 # DROP TABLES
 
 songplay_table_drop = "DROP TABLE IF EXISTS songplays"
