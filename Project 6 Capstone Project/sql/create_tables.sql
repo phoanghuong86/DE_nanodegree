@@ -1,4 +1,3 @@
--- staging tables
 CREATE TABLE IF NOT EXISTS public.staging_tweets (
     user_id varchar(256),
     name varchar(256),
@@ -98,7 +97,6 @@ CREATE TABLE IF NOT EXISTS public."time" (
     CONSTRAINT time_pkey PRIMARY KEY (date)
 );
 
--- fact table
 CREATE TABLE IF NOT EXISTS public.tweets (
     tweet_id varchar(256),
     text varchar(280),
