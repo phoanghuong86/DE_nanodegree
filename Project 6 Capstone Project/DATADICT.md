@@ -1,9 +1,6 @@
 # Data dictionary
 
-## About
 This file contains an overview of the attributes (columns), types and descriptions for all tables used in the project.
-
-### Tables
 
 #### Staging Tweets
 
