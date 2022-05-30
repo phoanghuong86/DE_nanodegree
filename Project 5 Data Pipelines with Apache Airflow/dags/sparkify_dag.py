@@ -9,7 +9,6 @@ from airflow.operators import (StageToRedshiftOperator,
 from helpers import SqlQueries
 from sparkify_subdag import load_dimensional_tables_dag
 
-
 start_date = datetime.datetime(2018, 11, 1)
 end_date = datetime.datetime(2018, 12, 31)
 
