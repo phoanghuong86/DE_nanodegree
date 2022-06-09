@@ -1,3 +1,5 @@
+
+
 CREATE TABLE IF NOT EXISTS public.artists (
 	artist_id varchar(256) NOT NULL,
 	artist_name varchar(256),
