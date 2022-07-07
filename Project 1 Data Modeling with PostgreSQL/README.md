@@ -125,3 +125,9 @@ select location,count(*) from songplays where level='paid'  group by location;
  Red Bluff, CA                           |   205
  San Francisco-Oakland-Hayward, CA       |   760
 ```
+
+## Contact
+
+Huong Pho - phoanghuong86@gmail.com | https://linkedin.com/in/huong-pho
+
+Project Link: https://github.com/phoanghuong86/DE_nanodegree
