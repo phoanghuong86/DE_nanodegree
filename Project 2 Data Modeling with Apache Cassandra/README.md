@@ -62,3 +62,8 @@ Follow the steps to extract and load the data into the data model.
 1. Navigate to project folder
 2. Run `etl.ipynb` iPython notebook
 3. Program will create `event_datafile_new.csv`  and init the ETL process and load data into tables 
+## Contact
+
+Huong Pho - phoanghuong86@gmail.com | https://linkedin.com/in/huong-pho
+
+Project Link: https://github.com/phoanghuong86/DE_nanodegree
