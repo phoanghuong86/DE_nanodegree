@@ -69,4 +69,8 @@ An entity relationship diagram (ERD) of the data model is given below.
 4.  Check the S3 to make sure the process worked properly
 
 
-# Contact
+## Contact
+
+Huong Pho - phoanghuong86@gmail.com | https://linkedin.com/in/huong-pho
+
+Project Link: https://github.com/phoanghuong86/DE_nanodegree
