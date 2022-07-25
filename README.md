@@ -40,6 +40,7 @@ The Twitter data is dynamic and the other two dataset are static in nature. The 
 
 ## Contact
 
+
 Huong Pho - phoanghuong86@gmail.com | https://linkedin.com/in/huong-pho
 
 Project Link: https://github.com/phoanghuong86/DE_nanodegree
